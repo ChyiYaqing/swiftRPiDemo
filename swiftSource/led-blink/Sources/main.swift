@@ -1,3 +1,4 @@
+import Glibc
 import Foundation
 
 // Get a dictionary of all the gpio pins
@@ -9,7 +10,6 @@ guard let ledGpio = gpios[GPIOName.P4] else {
 }
 
 ledGpio.direction = .OUT
-ledGpio.value = 0
 
 // Read user input from keyboard and switch the LED on/off each time the user presses the return key
 
